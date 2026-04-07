@@ -1,3 +1,7 @@
+# Question 7: Write a program to implement MultiLayer Perceptron model
+# (i) To implement AND
+# (ii) To implement OR
+
 import numpy as np
 
 # Sigmoid and its derivative

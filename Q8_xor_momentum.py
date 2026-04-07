@@ -1,3 +1,7 @@
+# Question 8: Write a program for XOR function (binary inputs and outputs)
+# with momentum factor using back propagation algorithm.
+# Objective: To understand the concept of linear separability associated.
+
 import numpy as np
 
 def sig(x): return 1/(1+np.exp(-x))

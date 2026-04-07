@@ -107,13 +107,13 @@ hum  = float(input("Enter Humidity    (0-100 %): "))
 f     = fuzzify(temp, hum)
 rules = apply_rules(f)
 
-print("\n--- Fuzzy Membership Values ---")
-print(f"Temperature: Very Low={f['temp']['very_low']:.2f}  Low={f['temp']['low']:.2f}  High={f['temp']['high']:.2f}  Very High={f['temp']['very_high']:.2f}")
-print(f"Humidity:    Dry={f['hum']['dry']:.2f}  Comfortable={f['hum']['comfortable']:.2f}  Humid={f['hum']['humid']:.2f}  Sticky={f['hum']['sticky']:.2f}")
+# print("\n--- Fuzzy Membership Values ---")
+# print(f"Temperature: Very Low={f['temp']['very_low']:.2f}  Low={f['temp']['low']:.2f}  High={f['temp']['high']:.2f}  Very High={f['temp']['very_high']:.2f}")
+# print(f"Humidity:    Dry={f['hum']['dry']:.2f}  Comfortable={f['hum']['comfortable']:.2f}  Humid={f['hum']['humid']:.2f}  Sticky={f['hum']['sticky']:.2f}")
 
-print("\n--- Rule Firing Strengths ---")
-for k, v in rules.items():
-    print(f"  {k.capitalize()}: {v:.4f}")
+# print("\n--- Rule Firing Strengths ---")
+# for k, v in rules.items():
+#     print(f"  {k.capitalize()}: {v:.4f}")
 
 m = mamdani(rules)
 s = sugeno(rules)
